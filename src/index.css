@@ -75,3 +75,7 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+.App {
+    background-image: url('../public/images/pattern-bg-desktop.png');
+}

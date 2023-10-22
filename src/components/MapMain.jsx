@@ -3,7 +3,7 @@ import styles from './MapMain.module.css'
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-export default function MapMain() {
+export default function MapMain({ location }) {
     return (
         <div>
             <MapContainer
