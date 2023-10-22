@@ -11,7 +11,9 @@ export default function Form({ query, setQuery, querySubmit }) {
                 placeholder="Search for any IP address or domain"
                 onChange={(e) => setQuery(e.target.value)}
             />
-            <button className={styles.button}></button>
+            <button className={styles.button}>
+                <div className={styles.buttonIcon}></div>
+            </button>
         </form>
     )
 }

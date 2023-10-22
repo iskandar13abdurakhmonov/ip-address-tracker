@@ -8,7 +8,7 @@ export default function Header({ children }) {
             <div className="header__container">
                 <div className={styles.header}>
                     <div className={styles.headerBox}>
-                        <h1 className={styles.HeaderTitle}>
+                        <h1 className={styles.headerTitle}>
                             IP Address Tracker
                         </h1>
                     </div>

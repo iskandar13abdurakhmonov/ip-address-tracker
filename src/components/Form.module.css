@@ -1,8 +1,33 @@
+.form {
+    margin: 0 0 35px 0;
+    display: flex;
+    max-width: 497px;
+}
+
+.input {
+    padding: 22px 191px 15px 25px;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.input:focus {
+    outline: none;
+}
+
 .button {
-    width: 20px;
-    height: 20px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 0%);
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+    cursor: pointer;
+}
+
+.buttonIcon {
+    width: 9px;
+    height: 14px;
     background-image: url('../../public/images/icon-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }

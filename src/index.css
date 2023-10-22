@@ -78,4 +78,7 @@ body {
 
 .App {
     background-image: url('../public/images/pattern-bg-desktop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

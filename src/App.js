@@ -8,10 +8,10 @@ import MapMain from './components/MapMain'
 const API_KEY = 'at_GhT5ICpeSwx0Nhdi2OWf8yBBg1NOW'
 
 function App() {
-    const [location, setLocation] = useState('184.207.90.20')
+    const [location, setLocation] = useState('')
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState('')
-    const [query, setQuery] = useState('184.207.90.20')
+    const [query, setQuery] = useState('')
 
     const handleSubmit = (query) => {
         setQuery(query)
@@ -46,23 +46,25 @@ function App() {
     return (
         <div className="App">
             <div className="wrapper">
-                <Header>
-                    <Form
-                        querySubmit={handleSubmit}
-                        query={query}
-                        setQuery={setQuery}
-                    />
-                </Header>
-                <main className="main">
-                    <div className="main__container">
-                        <Info
+                <div className="top">
+                    <Header>
+                        <Form
+                            querySubmit={handleSubmit}
                             query={query}
-                            location={location}
-                            isLoading={isLoading}
+                            setQuery={setQuery}
                         />
-                    </div>
-                    <MapMain location={location} />
-                </main>
+                    </Header>
+                    <main className="main">
+                        <div className="main__container">
+                            <Info
+                                query={query}
+                                location={location}
+                                isLoading={isLoading}
+                            />
+                        </div>
+                        <MapMain location={location} />
+                    </main>
+                </div>
                 <footer className="footer">
                     <div className="attribution">
                         Challenge by{' '}
