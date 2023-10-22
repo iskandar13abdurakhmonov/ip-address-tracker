@@ -61,3 +61,17 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.marker {
+    height: 100px;
+    width: 100px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
