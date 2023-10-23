@@ -3,32 +3,34 @@ import styles from './Info.module.css'
 
 export default function Info({ query, location, isLoading }) {
     return (
-        <div className={styles.info}>
+        <div className={styles.box}>
             {isLoading ? (
-                'Data is fetching...'
+                'Loading...'
             ) : (
-                <div className={styles.infoBox}>
+                <div className={styles.info}>
                     <div className={styles.infoItem}>
-                        <h2 className={styles.itemTitle}>ip address</h2>
-                        <p className={styles.itemDescr}>{query}</p>
+                        <div className={styles.infoContent}>
+                            <h2 className={styles.infoTitle}>ip address</h2>
+                            <p className={styles.infoDescr}>{location?.ip}</p>
+                        </div>
                     </div>
                     <div className={styles.infoItem}>
-                        <h2 className={styles.itemTitle}>location</h2>
-                        <p className={styles.itemDescr}>
-                            {location.location?.region},{' '}
-                            {location.location?.country}{' '}
-                            {location.as?.asn}
-                        </p>
+                        <div className={styles.infoContent}>
+                            <h2 className={styles.infoTitle}>location</h2>
+                            <p className={styles.infoDescr}>{location.location?.city}, {location.location?.country} {location.as?.asn}</p>
+                        </div>
                     </div>
                     <div className={styles.infoItem}>
-                        <h2 className={styles.itemTitle}>timezone</h2>
-                        <p className={styles.itemDescr}>
-                            UTC {location.location?.timezone}
-                        </p>
+                        <div className={styles.infoContent}>
+                            <h2 className={styles.infoTitle}>timezone</h2>
+                            <p className={styles.infoDescr}>UTC  {location.location?.timezone}</p>
+                        </div>
                     </div>
                     <div className={styles.infoItem}>
-                        <h2 className={styles.itemTitle}>isp</h2>
-                        <p className={styles.itemDescr}>{location.isp}</p>
+                        <div className={styles.infoContent}>
+                            <h2 className={styles.infoTitle}>isp</h2>
+                            <p className={styles.infoDescr}>{location?.isp}</p>
+                        </div>
                     </div>
                 </div>
             )}

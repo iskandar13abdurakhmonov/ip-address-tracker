@@ -1,11 +1,13 @@
 .form {
-    margin: 0 0 35px 0;
+    margin: 0 0 48px 0;
     display: flex;
-    max-width: 497px;
+    justify-content: center;
+    width: 100%;
 }
 
 .input {
-    padding: 22px 191px 15px 25px;
+    width: 497px;
+    padding: 22px 0 15px 25px;
     border-bottom-left-radius: 14px;
     border-top-left-radius: 14px;
 }
