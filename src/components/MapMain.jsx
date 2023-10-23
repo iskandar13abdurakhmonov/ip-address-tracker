@@ -24,7 +24,7 @@ export default function MapMain({ location }) {
     const [markerPosition, setMarkerPosition] = useState([41.311081, 69.240562])
 
     return (
-        <div>
+        <div className={styles.mapContainer}>
             <MapContainer
                 className={styles.map}
                 center={mapCenter}

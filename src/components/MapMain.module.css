@@ -1,6 +1,11 @@
+.mapContainer {
+    padding: 240px 0 0 0;
+    z-index: 9;
+}
+
 .map {
     width: 100%;
-    height: 520px;
+    height: 100vh;
 }
 
 .marker {

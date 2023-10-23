@@ -47,25 +47,21 @@ function App() {
     return (
         <div className="App">
             <div className="wrapper">
-                <div className="top">
-                    <Header>
-                        <Form
-                            querySubmit={handleSubmit}
-                            query={query}
-                            setQuery={setQuery}
-                        />
-                    </Header>
-                    <main className="main">
-                        <div className="main__container">
-                            <Info
-                                query={query}
-                                location={location}
-                                isLoading={isLoading}
-                            />
-                        </div>
-                        <MapMain location={location} />
-                    </main>
-                </div>
+                <Header>
+                    <Form
+                        querySubmit={handleSubmit}
+                        query={query}
+                        setQuery={setQuery}
+                    />
+                    <Info
+                        query={query}
+                        location={location}
+                        isLoading={isLoading}
+                    />
+                </Header>
+                <main className="main">
+                    <MapMain location={location} />
+                </main>
                 <footer className="footer">
                     <div className="attribution">
                         Challenge by{' '}
