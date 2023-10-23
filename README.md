@@ -25,12 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop screenshot](<./src/screenshots/screenshot%20(desktop).png>)
+![desktop screenshot](./src/screenshots/desktop.png)
+![mobile screenshot](./src/screenshots/mobile.png)
 
 ### Links
 
 -   Solution URL: [github](https://github.com/iskandar13abdurakhmonov/ip-address-tracker)
--   Live Site URL: [netlify](https://master--imaginative-swan-0ebe5a.netlify.app/)
+-   Live Site URL: [netlify](https://master--zippy-toffee-c65aac.netlify.app/)
 
 ## My process
 
@@ -39,6 +40,7 @@ Users should be able to:
 -   Semantic HTML5 markup
 -   CSS custom properties
 -   Flexbox
+-   Grid
 -   [React](https://reactjs.org/) - JS library
 
 in handy for anyone viewing your solution or for yourself when you look back on this project in the future.\*\*

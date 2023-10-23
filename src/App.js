@@ -71,7 +71,7 @@ function App() {
                         >
                             Frontend Mentor
                         </a>
-                        . Coded by <a href="#">Your Name Here</a>.
+                        . Coded by <a href="https://www.frontendmentor.io/profile/iskandar13abdurakhmonov">eescan</a>.
                     </div>
                 </footer>
             </div>
