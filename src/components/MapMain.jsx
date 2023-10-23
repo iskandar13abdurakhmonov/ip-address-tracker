@@ -32,18 +32,13 @@ export default function MapMain({ location }) {
                 scrollWheelZoom={true}
                 zoomControl={false}
             >
-              <ChangeCenter position={mapCenter}/>
+                <ChangeCenter position={mapCenter} />
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 />
-                <Marker
-                    className={styles.marker}
-                    position={markerPosition}
-                >
-                    <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
+                <Marker position={markerPosition}>
+                    <Popup>{location.location?.city}</Popup>
                 </Marker>
             </MapContainer>
         </div>

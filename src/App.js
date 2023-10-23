@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Info from './components/Info'
 import MapMain from './components/MapMain'
 
-const API_KEY = 'at_GhT5ICpeSwx0Nhdi2OWf8yBBg1NOW'
+const apiKey = 'at_S9qLxqvF3wVz8WUJukg7gOtPoq18s'
 
 function App() {
     const [location, setLocation] = useState('')
@@ -23,7 +23,7 @@ function App() {
             try {
                 setIsLoading(true)
                 const res = await fetch(
-                    `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${query}`
+                    `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${query}`
                 )
                 if (!res.ok) {
                     throw new Error(
@@ -54,7 +54,6 @@ function App() {
                         setQuery={setQuery}
                     />
                     <Info
-                        query={query}
                         location={location}
                         isLoading={isLoading}
                     />

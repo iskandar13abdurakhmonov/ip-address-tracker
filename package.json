@@ -10,9 +10,12 @@
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
     "react-leaflet-google-layer": "^2.2.0",
+    "react-loader-spinner": "^5.4.5",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "3.0.3",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
+    "prettier": "3.0.3"
   }
 }

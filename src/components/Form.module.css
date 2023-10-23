@@ -26,10 +26,21 @@
     border-bottom-right-radius: 14px;
     border-top-right-radius: 14px;
     cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 25%);
 }
 
 .buttonIcon {
     width: 9px;
     height: 14px;
     background-image: url('../../public/images/icon-arrow.svg');
+}
+
+@media (max-width: 500px) {
+    .input {
+        width: 380px;
+    }
 }

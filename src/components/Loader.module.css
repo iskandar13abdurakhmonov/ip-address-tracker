@@ -1,0 +1,31 @@
+.loader {
+    width: 1080px;
+    height: 169px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin: 0 30px 0 0;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+
+@media (max-width: 900px) {
+    .loader {
+        width: 859px;
+        height: 311px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .loader {
+        width: 550px;
+        height: 369px;
+        justify-content: start;
+    }
+
+
+}
